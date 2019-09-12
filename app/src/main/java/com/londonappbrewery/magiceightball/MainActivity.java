@@ -16,9 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button askButton;
-        askButton=(Button)findViewById(R.id.askButton);
-        final ImageView ballDisplay = (ImageView) findViewById(R.id.image_eightBall);
-        final int[] ballArray = {R.drawable.ball1,R.drawable.ball2,R.drawable.ball3,R.drawable.ball4,R.drawable.ball5};
+        askButton=findViewById(R.id.askButton);
+        final ImageView ballDisplay = findViewById(R.id.image_eightBall);
+        final int[] ballArray = {R.drawable.ball1,
+                R.drawable.ball2,
+                R.drawable.ball3,
+                R.drawable.ball4,
+                R.drawable.ball5};
         askButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
